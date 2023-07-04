@@ -1,0 +1,123 @@
+﻿.container{
+    font-size: 1.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name-group{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.password-group{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.login-part input{
+    width: 300px;
+    height: 25px;
+    font-size: 27px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid rgb(13, 65, 97);
+}
+
+.login-part button{
+    font-size: 25px;
+    margin: 5px;
+    padding: 9px;
+    background-color: rgb(2, 51, 81);
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+
+.header-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.messanger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.window{
+    border: 2px solid rgb(7, 53, 69);
+    background-color: cadetblue;
+    color: aliceblue;
+    width: 50%;
+    height: 600px;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-y: scroll;
+}
+
+.send-group{
+    width: 50%;
+    display: flex;
+}
+
+.send-group input{
+    width: 90%;
+    height: 30px;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid rgb(7, 53, 69);
+    margin-top: 2px;
+}
+
+.send-group button{
+    width: 13%;
+    background-color: rgb(68, 70, 71);
+    color: white;
+    height: 36px;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 2px;
+    margin-left: 2px;
+    border-radius: 7px;
+}
+
+.displayer{
+    display: none;
+}
+
+.self-output{
+    margin: 7px;
+    word-break:break-all;
+    color: white;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: left;
+    margin-right: 120px;
+}
+
+.user-output{
+    margin: 7px;
+    word-break: break-all;
+    color: white;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: right;
+    margin-left: 60px;
+}
+
+

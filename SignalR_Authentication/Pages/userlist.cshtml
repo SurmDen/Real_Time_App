@@ -1,0 +1,49 @@
+﻿@page "/userlist"
+@model UserList
+
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.AspNetCore.Mvc.TagHelpers;
+@using Microsoft.AspNetCore.Mvc.RazorPages;
+@using SignalR_Authentication.Interfaces;
+@using SignalR_Authentication.Models;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Users</title>
+</head>
+<body>
+    <div class="header">
+        <h2>User list</h2>
+    </div>
+    <div class="list">
+        @foreach (User user in Model.Users)
+        {
+            <div>@user.Name</div>
+            <div>@user.Email</div>
+            <a href="/login.html?id=@user.Id">Write message</a>
+        }
+    </div>
+</body>
+</html>
+
+@functions{
+    public class UserList : PageModel
+    {
+        private IUserRepository repository;
+
+        public UserList(IUserRepository repository)
+        {
+            this.repository = repository;
+        }
+
+        [BindProperty]
+        public List<User> Users { get; set; }
+
+        public void OnGet()
+        {
+            Users = repository.GetUsers();
+        }
+    }
+}
